@@ -1,13 +1,17 @@
 // B. The Division
-#include <iostream>
-#include <algorithm>
-#include<cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int maxScore(long long num)
+int maxScore(ll num)
 {
     long long score = 0 ;
-    for(long long i = 2 ; i * i <= num ; i++)
+    for(ll i = 2 ; i * i <= num ; i++)
     {
         if(num % i == 0)
         {
@@ -20,23 +24,28 @@ int maxScore(long long num)
         }
     }
 
-    if(num > 1)
-    {
-        score++;
-    }
+    if(num > 1)  score++;
 
     return score ;
 }
+
+void solve()
+{
+    ll num ;     cin >> num ;
+    cout << maxScore(num) << endl;
+  
+}
+
 int main()
 {
+    fast;
 
-    long long num ; 
-    cin >> num ;
-    
-    cout << maxScore(num) << endl;
-
-    
-    
+    ll t = 1;
+    // cin >> t ;
+    while (t--)
+    {
+        solve();
+    }
 
     return 0;
 }
