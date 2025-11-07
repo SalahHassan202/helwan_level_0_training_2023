@@ -1,24 +1,35 @@
 // A. Too Easy 002
-#include <iostream>
-#include <algorithm>
-#include<cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
+
+void solve()
+{
+     ll n1 , n2 ; 
+    cin >> n1 >> n2 ;
+    for(int i = 1 ; i <= n2 ; i++)
+    {
+        if(n1 % i == 0)
+        cout << i << " is a divisor of " << n1 << endl;
+    }
+  
+}
 
 int main()
 {
+    fast;
 
-    long long num1 , num2 ; 
-    cin >> num1 >> num2 ;
-    for(int i = 1 ; i <= num2 ; i++)
+    ll t = 1;
+    // cin >> t ;
+    while (t--)
     {
-        if(num1 % i == 0)
-        {
-            cout << i << " is a divisor of " << num1 << endl;
-        }
+        solve();
     }
-
-    
-    
 
     return 0;
 }
