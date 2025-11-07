@@ -1,37 +1,50 @@
 // A. The Lost Number
 
-#include <iostream>
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int main()
+void solve()
 {
-    int numbers[10]; 
+    int n[10]; 
     int x;            
     bool found = false;
     
     for (int i = 0; i < 10; i++)
     {
-        cin >> numbers[i];
+        cin >> n[i];
     }
     
     cin >> x;
     
-    for (int i = 0; i < 10; i++) {
-        if (numbers[i] == x)
+    for (int i = 0; i < 10; i++)
+    {
+        if (n[i] == x)
         {
             found = true;  
             break;     
         }
     }
     
-    if (found)
+    if (found)  cout << "Found" << endl;
+    else  cout << "Not Found" << endl;
+  
+}
+
+int main()
+{
+    fast;
+
+    ll t = 1;
+    // cin >> t ;
+    while (t--)
     {
-        cout << "Found" << endl;
+        solve();
     }
-    else
-    {
-        cout << "Not Found" << endl;
-    }
-    
+
     return 0;
 }
