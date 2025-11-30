@@ -1,13 +1,16 @@
 // G. Maria and Ali
-#include <iostream>
-#include <algorithm>
-#include<cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int main()
+void solve()
 {
-
-    long long num ; 
+    ll num ; 
     cin >> num ;
 
     if(num % 2 == 0 )
@@ -18,7 +21,18 @@ int main()
     {
         cout << "NO" << endl;
     }
-    
 
+}
+
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
+
