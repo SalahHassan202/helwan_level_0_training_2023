@@ -1,23 +1,40 @@
 // B. Wegz Need Help
-#include <iostream>
-#include <algorithm>
-#include<cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int main()
+void solve()
 {
-    long long a, b, x, y ;
+    ll a, b, x, y ;
     cin >> a >> b >> x >> y ;
 
     
-    long long distance1 = abs(a - b);
+    ll distance1 = abs(a - b);
 
-    long long distance2 = abs(a - x) + abs(b - y);
-    long long distance3 = abs(a - y) + abs(b - x);
+    ll distance2 = abs(a - x) + abs(b - y);
+    ll distance3 = abs(a - y) + abs(b - x);
 
-    long long min_distance = min({distance1, distance2, distance3});
+    ll min_distance = min({distance1, distance2, distance3});
 
     cout << min_distance << endl;
 
+
+   
+}
+
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
