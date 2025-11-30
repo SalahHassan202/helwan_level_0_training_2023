@@ -1,13 +1,16 @@
 // F. Logic Case
-#include <iostream>
-#include <algorithm>
-#include<cmath>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int main()
+void solve()
 {
-    
-    long long a , b  ;
+    ll a , b  ;
     cin>> a >> b ;
 
     if (a > b)
@@ -15,9 +18,9 @@ int main()
         swap(a, b);
     }
 
-    long long sum = 0 ;
-    long long m = a + 1 ;
-    long long n = b - 1 ;
+   ll sum = 0 ;
+   ll m = a + 1 ;
+   ll n = b - 1 ;
 
 
 
@@ -29,6 +32,17 @@ int main()
     cout <<  sum << endl;
     
 
+}
+
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
 
