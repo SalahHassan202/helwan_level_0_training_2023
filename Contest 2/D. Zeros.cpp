@@ -1,9 +1,11 @@
 // D. Zeros?
-#include <iostream>
-#include <algorithm>
-#include <cmath>
-#include <string>
-#include <iomanip>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
 /*
@@ -50,21 +52,29 @@ int countZeros(int n)
     return count;
 }
 
-int main()
+void solve()
 {
-     int n;
+    
+    int n;
     cin >> n;
 
     int result = countZeros(n);
     cout << result << endl;
 
         
-    return 0 ;
 
 }
+
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
     
-
-
-
-
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
 
