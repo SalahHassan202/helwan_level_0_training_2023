@@ -1,16 +1,19 @@
 // C. Sum of Four
 
-#include <iostream>
-#include <algorithm>
-#include<cmath>
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-int main()
+void solve()
 {
-    long long a, b, c, d ;
+    ll a, b, c, d ;
     cin >> a >> b >> c >> d ;
 
-    long long result1 , result2 , result3 , result4 ;
+    ll result1 , result2 , result3 , result4 ;
 
     if(a % 2 == 0)
     {
@@ -55,9 +58,19 @@ int main()
 
     cout << result1 + result2 + result3 + result4 << endl;
 
-    
-    
 
+   
+}
+
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
 
