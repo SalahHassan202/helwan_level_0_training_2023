@@ -1,26 +1,25 @@
 // A. Salek or Unsalek
-#include <iostream>
-#include <algorithm>
-#include<cmath>
-#include <string>
-#include <iomanip>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 
-
-int main()
+void solve()
 {
+    
 
-    long long testCases ;
-    cin >> testCases ;
+    ll counterEven = 0 , counterOdd = 0 ; 
 
-    long long counterEven = 0 , counterOdd = 0 ; 
-
-    while(testCases--)
-    {
-        long long size ;
+    
+    
+        ll size ;
         cin >> size ;
 
-        long long  arr[size] ;
+        ll  arr[size] ;
 
         for(int i = 0 ; i < size ; i++)
         {
@@ -52,6 +51,19 @@ int main()
         counterEven = 0 ; 
         counterOdd = 0 ;
 
+    
+
+}
+
+int main()
+{
+    fast;
+    ll t = 1;
+    cin >> t;
+    while (t--)
+    {
+        solve();
     }
     return 0;
 }
+
