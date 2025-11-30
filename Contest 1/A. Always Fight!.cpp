@@ -1,16 +1,22 @@
 // A. Always Fight!
 
-#include <iostream>
-using namespace std ;
-int main()
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
-    long long x , y ;
+    ll x , y ;
     cin >> x >> y ;
 
-    long long last_two_digit_x = x % 100 ;   
-    long long last_two_digit_y = y % 100 ;
+    ll last_two_digit_x = x % 100 ;   
+    ll last_two_digit_y = y % 100 ;
     
-    long long new_number = last_two_digit_x % 10 * 10 + last_two_digit_y % 10;
+    ll new_number = last_two_digit_x % 10 * 10 + last_two_digit_y % 10;
     
     new_number = new_number * 5 ;
     
@@ -26,7 +32,17 @@ int main()
     }
      
 
+   
+}
 
-    return 0 ; 
-
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
