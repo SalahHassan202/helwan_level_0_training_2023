@@ -1,11 +1,16 @@
 // A. Is It 001
 
-#include <iostream>
-using namespace std ;
-int main()
-{
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
 
-    long long num1 , num2 ; 
+void solve()
+{
+    ll num1 , num2 ; 
     char oper ;
     cin >> num1 >> oper >> num2 ;
 
@@ -43,6 +48,17 @@ int main()
         }
     }
 
+ 
+}
 
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
