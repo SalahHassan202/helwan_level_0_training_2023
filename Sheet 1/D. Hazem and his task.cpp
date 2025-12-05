@@ -1,11 +1,17 @@
 // D. Hazem and his task
 
-#include <iostream>
-using namespace std ;
-int main()
-{
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
 
-   char letter ;                  cin >> letter ;
+void solve()
+{
+   
+    char letter ;                  cin >> letter ;
    if(isupper(letter))       // capital letter 
    {
         cout << (char)tolower(letter) << endl;
@@ -14,10 +20,19 @@ int main()
    {
         cout << (char)toupper(letter) << endl;
    }
+}
 
-
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
-
+}
 
 
 // D. Hazem and his task
@@ -78,5 +93,6 @@ z	122	01111010	Z	090	01011010
 
 
 */
+
 
 
