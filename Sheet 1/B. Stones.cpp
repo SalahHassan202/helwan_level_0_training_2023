@@ -1,11 +1,17 @@
 // B. Stones
 
-#include <iostream>
-using namespace std ;
-int main()
-{
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
 
-    long long num_of_stones ;
+void solve()
+{
+   
+   ll num_of_stones ;
     
     cin >> num_of_stones  ;
 
@@ -22,6 +28,17 @@ int main()
         cout << 2 << endl;
     }
     
+ 
+}
 
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
