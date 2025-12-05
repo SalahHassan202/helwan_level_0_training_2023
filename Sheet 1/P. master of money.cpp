@@ -1,10 +1,16 @@
 // P. master of money
-# include<iostream>
-#include <cmath>              
-using namespace std ;
-int main()
-{
 
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
+{
+   
     int x , y , n ;                    cin >> x >> y >> n ;
     // الفكره حسب سعر الحلوي الي اقدر اشتريها لما اشتري 3 حلوات مع بعض و
     //  احسب عدد  سعر الحلوي الي اقدر اشتريها لما اشتري كل حلوه لوحدها 
@@ -18,7 +24,16 @@ int main()
     int cost2 = x * n ;       
 
     cout << min(cost1 , cost2) << endl;
+}
 
-
-    return 0 ; 
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
