@@ -1,11 +1,17 @@
 // C. KG2
 
-#include <iostream>
-using namespace std ;
-int main()
-{
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
 
-    long long num , sum = 0  ;
+void solve()
+{
+   
+    ll num , sum = 0  ;
     
     cin >> num  ;
 
@@ -15,7 +21,17 @@ int main()
    }
 
    cout << sum << endl; 
-    
+ 
+}
 
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
     return 0;
 }
