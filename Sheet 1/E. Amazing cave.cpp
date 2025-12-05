@@ -1,11 +1,17 @@
 // E. Amazing cave
 
-#include <iostream>
-using namespace std ;
-int main()
-{
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
 
-    long long num ;          cin >> num ;
+void solve()
+{
+   
+   ll num ;          cin >> num ;
 
     int last_digit = num % 10;    // find last digit to number of last digit == 4 or == 7 ===> lucky num
 
@@ -27,7 +33,16 @@ int main()
     {
         cout << "odd" << endl;
     }
-
-    return 0;
 }
 
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
