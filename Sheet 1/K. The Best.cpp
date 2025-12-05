@@ -1,10 +1,17 @@
 // K. The Best
-# include<iostream>
-using namespace std ;
-int main()
-{
 
-    long long a , b , c , d ; 
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
+{
+   
+    ll a , b , c , d ; 
     cin >> a >> b >> c >> d ;
 
     if (a < b && a < c && a < d)
@@ -28,8 +35,18 @@ int main()
         cout << "We are the best" << endl;
     }
 
+}
 
-    
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
 
-    return 0 ; 
 }
