@@ -1,22 +1,36 @@
 // H. Almost rectangle
 
-#include <iostream>
-#include <iomanip>                   //   setprecision
-using namespace std ;
-int main()
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
-  long long a  , b , c , d ;
+   
+  ll a  , b , c , d ;
   cin >> a >> b >> c >> d ;
 
-  long long x , y ; 
+  ll x , y ; 
   x = a - c ; 
   y = b - d ; 
 
-   float area = (a * b) - (0.5 * x * y) ; 
-    cout << fixed << setprecision(6)  << area << endl ;
+float area = (a * b) - (0.5 * x * y) ; 
+cout << fixed << setprecision(6)  << area << endl ;
 
+}
 
-
-    return 0 ;
-
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
