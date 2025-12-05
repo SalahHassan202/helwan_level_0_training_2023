@@ -1,21 +1,25 @@
 // R. The Maze
-# include<iostream>
-#include <cmath>              
-using namespace std ;
-int main()
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
-    long long x1 , y1  , x2 , y2 , x3 , y3 , x4 , y4; 
-    
+   
+    ll x1 , y1  , x2 , y2 , x3 , y3 , x4 , y4; 
     cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3 >> x4 >> y4; 
     
+    ll distance1 = pow((x2-x1), 2 ) + pow ((y2-y1) , 2) ; 
+    ll distance2 = pow((x3-x1), 2 ) + pow ((y3-y1) , 2) ; 
+    ll distance3 = pow((x4-x1), 2 ) + pow ((y4-y1) , 2) ; 
 
-  
-    long long distance1 = pow((x2-x1), 2 ) + pow ((y2-y1) , 2) ; 
-    long long distance2 = pow((x3-x1), 2 ) + pow ((y3-y1) , 2) ; 
-    long long distance3 = pow((x4-x1), 2 ) + pow ((y4-y1) , 2) ; 
-
-    long long min_distance = distance1;
-    long long nearest_x = x2, nearest_y = y2;
+    ll min_distance = distance1;
+    ll nearest_x = x2, nearest_y = y2;
 
     if (distance2 < min_distance)
     {
@@ -33,7 +37,16 @@ int main()
 
     cout << min_distance << endl;
     cout << nearest_x << " " << nearest_y << endl;
+}
 
-
-    return 0 ; 
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
