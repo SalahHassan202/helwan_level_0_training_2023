@@ -43,11 +43,18 @@
 
 // F. Divisible by X
 
-#include <iostream>
-using namespace std ;
-int main()
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
-    long long A, B, X;
+   
+    ll A, B, X;
     cin >> A >> B >> X;
 
     if (A > B)
@@ -56,11 +63,21 @@ int main()
     }
 
     // حساب عدد الأرقام القابلة للقسمة على X في النطاق [A, B]
-    long long count = (B / X) - ((A - 1) / X);         // O(1)
+    ll count = (B / X) - ((A - 1) / X);         // O(1)
 
     cout << count << endl;      
 
-
-    return 0 ; 
-
 }
+
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
+
