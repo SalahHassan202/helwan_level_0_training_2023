@@ -1,13 +1,20 @@
 // J. Guess what?
-#include <iostream>
-#include <iomanip>                   //   setprecision
-using namespace std ;
-int main()
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
+   
     double a , b , c ; 
     cin >> a >> b >> c ; 
 
-    long long result1 = (a*b) / c ; 
+    ll result1 = (a*b) / c ; 
     double result2 = (a*b) / c ; 
 
     double test = result2 - result1 ; 
@@ -28,7 +35,16 @@ int main()
         }
     }
 
+}
 
-    return 0 ;
-
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
